@@ -1,0 +1,75 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: hsl(275, 100%, 97%);
+}
+
+.card {
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    width: 450px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    align-items: center;
+    z-index: 1;
+    padding: 20px;
+
+}
+
+.card::after {
+    content: '';
+
+}
+
+
+.backImg {
+    width: 100vw;
+    height: 40%;
+    background-image: url('../images/background-pattern-desktop.svg');
+    background-size: cover;
+    z-index: -1;
+}
+
+/*-------------*/
+
+.titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: -20px;
+    
+     & .faqs {
+        font-size: 35px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-top: 0;
+     }
+
+     img {
+        margin-top: -34px;
+     }
+}
+
+.details  {
+   /* display: none; */
+   font-size: 12px;
+}
+
+.info {
+    display: flex ;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+        font-size: 14px;
+    }
+     img {
+        width: 5%;
+     }
+
+    
+}
+
